@@ -70,16 +70,20 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (position){
                     case 0:
-                        mViewPager.setCurrentItem(0);   //点击BottomNavigationBar上第0个item，同时将ViewPager设为第0页
-                        break;
+                        //mViewPager.clearAnimation();
+                        mViewPager.setCurrentItem(0, false);   //点击BottomNavigationBar上第0个item，同时将ViewPager设为第0页
+                        break;                                 //设置第2个参数为false，去掉页面切换的平滑过渡
                     case 1:
-                        mViewPager.setCurrentItem(1);
+                        //mViewPager.clearAnimation();
+                        mViewPager.setCurrentItem(1, false);
                         break;
                     case 2:
-                        mViewPager.setCurrentItem(2);
+                        //mViewPager.clearAnimation();
+                        mViewPager.setCurrentItem(2, false);
                         break;
                     case 3:
-                        mViewPager.setCurrentItem(3);
+                        //mViewPager.clearAnimation();
+                        mViewPager.setCurrentItem(3, false);
                         break;
                     default:
                 }
